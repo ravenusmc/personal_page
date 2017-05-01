@@ -1,7 +1,13 @@
+/* CSS used through out page */
+
 #wrapper {
   width: 98%;
   margin-right: auto;
   margin-left: auto;
+}
+
+.center {
+  text-align: center;
 }
 
 /* CSS for Nav Element */
@@ -13,6 +19,10 @@ nav {
 nav ul li {
   list-style: none;
   display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
 }
 
 .right_elements {
@@ -27,7 +37,7 @@ nav ul li {
 .title_banner {
   padding-top: 100px;
   background-image: url(https://source.unsplash.com/EdGeNlFGqmo);
-  height: 700px;
+  height: 600px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
