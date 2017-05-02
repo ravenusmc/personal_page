@@ -14,6 +14,11 @@
 
 nav {
   border-bottom: solid 2px black;
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  right: 0;
+  left: 0;
 }
 
 nav ul li {
@@ -23,6 +28,12 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+nav a:hover {
+  color: #4286f4;
 }
 
 .right_elements {
@@ -57,10 +68,11 @@ nav ul li a {
 
 /* CSS for about me section */
 
-#about_section {
+.about_section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  background-color: #4286f4;
 }
 
 .about_one {
@@ -74,7 +86,30 @@ nav ul li a {
 
 
 
+
 @media only all and (max-width: 768px){
+
+  .title_banner_div {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30%;
+  text-align: center;
+  font-size: 1em;
+}
+
+  .about_section {
+    display: flex;
+    flex-direction: column;
+    background-color: #4286f4;
+  }
+
+  .about_one {
+    flex: 5;
+  }
+
+  .about_two {
+    flex: 5;
+  }
 
 
 }
