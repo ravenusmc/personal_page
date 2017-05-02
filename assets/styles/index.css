@@ -55,6 +55,22 @@ nav ul li a {
   font-size: 1.5em;
 }
 
+/* CSS for about me section */
+
+#about_section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about_one {
+  flex: 5;
+}
+
+.about_two {
+  flex: 5;
+}
+
 
 
 
