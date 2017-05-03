@@ -1,7 +1,7 @@
 /* CSS used through out page */
 
 #wrapper {
-  width: 98%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -66,36 +66,64 @@ nav a:hover {
   font-size: 1.5em;
 }
 
-/* CSS for about me section */
+/* CSS for about_me section */
 
 .about_section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #4286f4;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
 }
 
 .about_one {
   flex: 5;
 }
 
+.about_one img {
+  margin-left: 45%;
+  border-radius: 5px;
+}
+
 .about_two {
   flex: 5;
 }
 
+.about_heading {
+  font-size: 2em;
+}
+
+.about_paragraph {
+  font-size: 20px;
+  line-height: 25px;
+  margin-right: 20px;
+}
 
 
+
+
+
+/*#image_div {
+  width: 300px;
+  height: 400px;
+}*/
+
+.marta_image {
+  width: 400px;
+  height: 400px;
+}
 
 
 @media only all and (max-width: 768px){
 
   .title_banner_div {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 30%;
-  text-align: center;
-  font-size: 1em;
-}
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30%;
+    text-align: center;
+    font-size: 1em;
+  }
 
   .about_section {
     display: flex;
@@ -105,6 +133,10 @@ nav a:hover {
 
   .about_one {
     flex: 5;
+  }
+
+  .about_one img {
+    margin-left: 4%;
   }
 
   .about_two {
