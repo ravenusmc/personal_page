@@ -100,6 +100,40 @@ nav a:hover {
   margin-right: 20px;
 }
 
+/* CSS for Early Projects Section */
+
+#early_projects_section {
+  padding-top: 30px;
+}
+
+.project_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.early_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.early_heading_para_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.early_para {
+  margin-top: -10px;
+  margin-left: 2%;
+}
+
 
 
 @media only all and (max-width: 768px){
