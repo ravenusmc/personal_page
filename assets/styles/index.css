@@ -165,7 +165,6 @@ nav a:hover {
 
 }
 
-
   .title_banner_div {
     margin-left: 10%;
     margin-right: 10%;
@@ -177,7 +176,7 @@ nav a:hover {
   .about_section {
     display: flex;
     flex-direction: column;
-    background-color: #4286f4;
+    background-color: #f8f8f8;
   }
 
   .about_one {
@@ -191,6 +190,20 @@ nav a:hover {
 
   .about_two {
     flex: 5;
+  }
+
+  /* CSS Media For Early Project Area */
+
+  .early_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .early_heading_para_area {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
 
