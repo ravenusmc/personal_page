@@ -19,6 +19,7 @@ nav {
   top: 0px;
   right: 0;
   left: 0;
+  z-index: 1;
 }
 
 nav ul li {
@@ -41,8 +42,6 @@ nav a:hover {
   padding-right: 20px;
 }
 
-/* End of Nav bar elements */
-
 /* CSS For Header */
 
 .title_banner {
@@ -54,13 +53,15 @@ nav a:hover {
 }
 
 .title_banner_div {
-  background-color: rgba(29,39,38,0.7);
+  /*background-color: rgba(29,39,38,0.7);*/
+  background: hsla(0, 0%, 100%, .7);
+  overflow: hidden;
   margin-left: 30%;
   margin-right: 30%;
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: white;
+  color: black;
   border-radius: 15px;
   text-align: center;
   font-size: 1.5em;
@@ -84,6 +85,9 @@ nav a:hover {
 .about_one img {
   margin-left: 45%;
   border-radius: 5px;
+  transition: .5s filter;
+  filter: sepia();
+  z-index: 0;
 }
 
 .about_two {
@@ -134,7 +138,13 @@ nav a:hover {
   margin-left: 2%;
 }
 
+/* CSS for Footer */
 
+footer {
+  text-align: center; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 @media only all and (max-width: 768px){
 
@@ -190,6 +200,10 @@ nav a:hover {
 
   .about_two {
     flex: 5;
+  }
+
+  .about_paragraph {
+    margin-left: 5%;
   }
 
   /* CSS Media For Early Project Area */
