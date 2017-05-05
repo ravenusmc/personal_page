@@ -138,6 +138,31 @@ nav a:hover {
   margin-left: 2%;
 }
 
+/* CSS for Current Work Section */
+
+#current_work_section {
+  background-color: #f8f8f8;
+}
+
+.current_top_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.current_sub_section {
+  display: flex;
+  flex-direction: row;
+}
+
+.sub_section_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 /* CSS for Footer */
 
 footer {
@@ -145,6 +170,8 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+
 
 @media only all and (max-width: 768px){
 
@@ -218,6 +245,13 @@ footer {
   .early_heading_para_area {
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  /* CSS Media for Current Work Section */
+
+  .current_sub_section {
+    display: flex;
+    flex-direction: column;
   }
 
 
