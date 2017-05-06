@@ -104,6 +104,10 @@ nav a:hover {
   margin-right: 20px;
 }
 
+.tech_talent_anchor {
+  text-decoration: none;
+}
+
 /* CSS for Early Projects Section */
 
 #early_projects_section {
