@@ -8,6 +8,7 @@
 
 .center {
   text-align: center;
+  color: #333;
 }
 
 /* CSS for Nav Element */
@@ -148,9 +149,16 @@ nav a:hover {
   background-color: #f8f8f8;
 }
 
+.current_work_title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .current_top_container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .current_sub_section {
@@ -159,12 +167,14 @@ nav a:hover {
 }
 
 .sub_section_one {
+  width: 350px;
+  height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-left: 2%;
   margin-right: 2%;
+  margin-bottom: 8px;
 }
 
 /* CSS for Footer */
@@ -256,6 +266,11 @@ footer {
   .current_sub_section {
     display: flex;
     flex-direction: column;
+  }
+
+  .sub_section_one {
+    margin-bottom: 1px;
+    border: 1px solid red;
   }
 
 
