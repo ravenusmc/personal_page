@@ -11,6 +11,13 @@
   color: #333;
 }
 
+/* CSS for the header element */
+
+header {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 /* CSS for Nav Element */
 
 nav {
@@ -270,7 +277,6 @@ footer {
 
   .sub_section_one {
     margin-bottom: 1px;
-    border: 1px solid red;
   }
 
 
