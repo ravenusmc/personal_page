@@ -256,6 +256,10 @@ footer {
 
   /* CSS Media For Early Project Area */
 
+  img {
+    height: 175px;
+  }
+
   .early_area {
     display: flex;
     flex-direction: column;
@@ -278,6 +282,7 @@ footer {
   .sub_section_one {
     margin-bottom: 1px;
   }
+
 
 
 }
