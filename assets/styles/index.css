@@ -184,6 +184,12 @@ nav a:hover {
   margin-bottom: 8px;
 }
 
+/* CSS for badges */
+.treehouse_badges {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 /* CSS for Footer */
 
 footer {
