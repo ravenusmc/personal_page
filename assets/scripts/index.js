@@ -20,17 +20,22 @@ function displayInfo(response_parsed){
   for (let i = 0; i < response_length; i++) {
 
     //Getting the variable to get the main container that all the divs will sit in
-    var main_parent = document.getElementById('badge_main_container');
+    let main_parent = document.getElementById('badge_main_container');
     //Creating the container, text and image elements.
-    var container = document.createElement('div');
-    var text = document.createElement('h3');
-    var image = document.createElement('img');
+    let container = document.createElement('div');
+    let text = document.createElement('h3');
+    let image = document.createElement('img');
+
+    container.setAttribute('class', 'badge_area')
+
+    //Setting the src and class attributes for the image
     image.setAttribute("src", response_parsed.badges[i].icon_url);
     image.setAttribute('class', 'image_area')
     //Appending the image to the container
     container.appendChild(image);
+
     //Getting the text information 
-    var newContent = document.createTextNode(response_parsed.badges[i].name); 
+    let newContent = document.createTextNode(response_parsed.badges[i].name); 
     //Adding the text information
     text.appendChild(newContent); 
     //Appending the container div to the main div

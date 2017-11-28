@@ -190,24 +190,28 @@ nav a:hover {
   margin-right: 5%;
 }
 
+.smart_phone_notice {
+  display: none;
+}
+
 #badge_main_container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 1000px;
 }
 
-/*#badge_container {
+.badge_area {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
-  border: 2px solid red;
-}*/
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
 
 .image_area {
-  height: 50px;
-  width: 75px;
+  height: 75px;
+  width: 100px;
 }
 
 /* CSS for Footer */
@@ -307,6 +311,16 @@ footer {
 
   .sub_section_one {
     margin-bottom: 1px;
+  }
+
+  /* CSS for Treehouse Badge Section */
+  #badge_main_container {
+    display: none;
+  }
+
+  .smart_phone_notice {
+    display: inline;
+    text-align: center;
   }
 
 
