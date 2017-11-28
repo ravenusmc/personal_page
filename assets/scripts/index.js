@@ -14,6 +14,8 @@ function UserAction() {
     return response_parsed
 }
 
+//This function will create and display the div, h3, and image elements on the page as well as 
+//pull the data from the Treehouse API. (Yeah does a lot of things!)
 function displayInfo(response_parsed){
   // console.log(response_parsed.badges);
   response_length = response_parsed.badges.length;
@@ -26,6 +28,7 @@ function displayInfo(response_parsed){
     let text = document.createElement('h3');
     let image = document.createElement('img');
 
+    //Setting an attribute for the div that will be holding the h3 and img elements.
     container.setAttribute('class', 'badge_area')
 
     //Setting the src and class attributes for the image
@@ -42,63 +45,16 @@ function displayInfo(response_parsed){
     main_parent.appendChild(container);
     //Appending the text to the image
     container.appendChild(text);
-
-
-
-
-    //creating div element 
-    // var main_parent = document.getElementById('badge_main_container'); //added
-    // var container = document.createElement('div'); //Added
-    // var gone = document.createElement('badge_container');//added
-    // main_parent.insertBefore(container, gone); // added 
-
-    // create a new h3 element 
-    // var newDiv = document.createElement("h3");
-    // // creating a new img element 
-    // var image = document.createElement("img");
-
-
-
-///////Works ///
-    //Getting the parent element that will be a container. 
-    //var parent = document.getElementById('badge_container');
-
-    // // create a new h3 element 
-    // var newDiv = document.createElement("h3");
-    // // creating a new img element 
-    // var image = document.createElement("img");
-    
-
-    //image code
-    //Setting the src and class attributes for the image.
-    // image.setAttribute("src", response_parsed.badges[i].icon_url);
-    // image.setAttribute('class', 'image_area')
-    // var imageTag = document.getElementById('badge_image');
-    // //Inserting the image to the DOM
-    // parent.insertBefore(image, imageTag);
-
-    //Code for the badge title
-    //adding content to the h3 element
-    // var newContent = document.createTextNode(response_parsed.badges[i].name); 
-    // // add the text node to the newly created h3 element
-    // newDiv.appendChild(newContent);  
-    // //getting the id of where to insert the new h3 elements
-    // var currentDiv = document.getElementById("badge_name");
-    // //attaching the elements to the page
-    // parent.insertBefore(newDiv, currentDiv);
-  }
-  
+  } 
 }
 
-// console.log(response_parsed.badges[i].icon_url);
-// document.getElementById("dailyImage").setAttribute("src", image.url);
-
+//This is the main function for the program
 function main() {
   response_parsed = UserAction();
   displayInfo(response_parsed);
 }
 
-
+//This fires the main function 
 window.onload = function(){
   main();
 }
