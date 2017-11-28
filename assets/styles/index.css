@@ -192,17 +192,16 @@ nav a:hover {
 
 #badge_container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 600px;
-}
-
-#badge_container > * {
   border: 2px solid red;
 }
 
-#badge_image {
-  height: 200px;
+.image_area {
+  height: 50px;
+  width: 75px;
 }
+
 /* CSS for Footer */
 
 footer {
