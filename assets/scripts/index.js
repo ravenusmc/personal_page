@@ -32,6 +32,10 @@ function displayInfo(response_parsed){
     var currentDiv = document.getElementById("badge_name");
     //attaching the elements to the page
     parent.insertBefore(newDiv, currentDiv);
+
+    //image code
+    image.setAttribute("src", response_parsed.badges[i].icon_url)
+    var imageTag = document.getElementById('badge_image')
   }
   
 }
