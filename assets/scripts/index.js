@@ -19,20 +19,42 @@ function displayInfo(response_parsed){
   response_length = response_parsed.badges.length;
   for (let i = 0; i < response_length; i++) {
 
+    //Getting the variable to get the main container that all the divs will sit in
+    var main_parent = document.getElementById('badge_main_container');
+    //Creating the container, text and image elements.
+    var container = document.createElement('div');
+    var text = document.createElement('h3');
+    var image = document.createElement('img');
+    image.setAttribute("src", response_parsed.badges[i].icon_url);
+    image.setAttribute('class', 'image_area')
+    //Appending the image to the container
+    container.appendChild(image);
+    //Getting the text information 
+    var newContent = document.createTextNode(response_parsed.badges[i].name); 
+    //Adding the text information
+    text.appendChild(newContent); 
+    //Appending the container div to the main div
+    main_parent.appendChild(container);
+    //Appending the text to the image
+    container.appendChild(text);
+
+
+
+
     //creating div element 
-    var main_parent = document.getElementById('badge_main_container'); //added
-    var container = document.createElement('div'); //Added
-    var gone = document.createElement('badge_container');//added
-    main_parent.insertBefore(container, gone); // added 
+    // var main_parent = document.getElementById('badge_main_container'); //added
+    // var container = document.createElement('div'); //Added
+    // var gone = document.createElement('badge_container');//added
+    // main_parent.insertBefore(container, gone); // added 
 
     // create a new h3 element 
-    var newDiv = document.createElement("h3");
-    // creating a new img element 
-    var image = document.createElement("img");
+    // var newDiv = document.createElement("h3");
+    // // creating a new img element 
+    // var image = document.createElement("img");
 
 
 
-///////WOrks ///
+///////Works ///
     //Getting the parent element that will be a container. 
     //var parent = document.getElementById('badge_container');
 
@@ -44,11 +66,11 @@ function displayInfo(response_parsed){
 
     //image code
     //Setting the src and class attributes for the image.
-    image.setAttribute("src", response_parsed.badges[i].icon_url);
-    image.setAttribute('class', 'image_area')
-    var imageTag = document.getElementById('badge_image');
-    //Inserting the image to the DOM
-    parent.insertBefore(image, imageTag);
+    // image.setAttribute("src", response_parsed.badges[i].icon_url);
+    // image.setAttribute('class', 'image_area')
+    // var imageTag = document.getElementById('badge_image');
+    // //Inserting the image to the DOM
+    // parent.insertBefore(image, imageTag);
 
     //Code for the badge title
     //adding content to the h3 element
