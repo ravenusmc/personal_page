@@ -4,10 +4,20 @@ h1, h3, h5, p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
 .resume_page_main {
   margin-top: 100px;
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 50px;
   border: 1px solid black;
   box-shadow: 10px 10px 5px #888888;
   font-family: Garamond;
@@ -51,13 +61,34 @@ h1, h3, h5, p {
 
 @media only all and (max-width: 768px){
 
+  nav {
+    height: 50px;
+    text-align: center;
+    position: relative;
+  }
+
   .resume_page_main {
+    margin-top: 50px;
+    margin-left: 3%;
+    margin-right: 1%;
     display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "title"
     "exp"
     "edc";
+  }
+
+  .resume_title {
+    margin-left: 5%;
+  }
+
+  .experience {
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
 }
