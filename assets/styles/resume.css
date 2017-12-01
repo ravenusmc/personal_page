@@ -20,11 +20,19 @@ h1, h3, h5, p {
 
 .resume_title {
   grid-area: title;
+  margin-top: 30px;
+  margin-left: 15%;
 }
 
 .experience {
   grid-area: exp;
   margin-top: 20px;
+  margin-left: 15%;
+}
+
+.job_container {
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .education {
@@ -33,8 +41,23 @@ h1, h3, h5, p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 .education_container {
   width: 200px;
+  margin-top: 10px;
+}
+
+@media only all and (max-width: 768px){
+
+  .resume_page_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title"
+    "exp"
+    "edc";
+  }
+
 }
