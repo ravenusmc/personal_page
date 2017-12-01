@@ -45,6 +45,10 @@ nav a:hover {
   color: #4286f4;
 }
 
+.left_element {
+  margin-left: 20px;
+}
+
 .right_elements {
   float: right;
   padding-right: 20px;
@@ -233,7 +237,7 @@ footer {
   }
 
   nav {
-    height: 200px;
+    height: 275px;
     text-align: center;
     position: relative;
   }
@@ -248,10 +252,14 @@ footer {
     display: block;
   }
 
-  .right_elements {
-  float: none;
+  .left_element {
+    margin-left: 10px;
+    padding-top: 10px;
+  }
 
-}
+  .right_elements {
+    float: none;
+  }
 
   .title_banner_div {
     margin-left: 10%;
