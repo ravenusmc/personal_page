@@ -221,14 +221,14 @@ nav a:hover {
 /* CSS for Footer */
 
 footer {
-  text-align: center; 
+  text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 
 
-@media only all and (max-width: 768px){
+@media only all and (max-width: 900px){
 
   #wrapper {
     width: auto;
